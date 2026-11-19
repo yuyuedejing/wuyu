@@ -68,3 +68,20 @@
 **提示词全文（阶段 6 · 图文列表 + 整体验收）：**
 
 > 创建新表 WuYu_gallery 存放图文数据（标题、图片地址、简介、分类），并插入至少 8 条测试数据；图片自行创建 SVG 放入 frontend/images/。后端新增对应 /api/ 接口，前端新建图文列表页面调用接口渲染，页面上同样要显示后端接口链接和数据内容。在 frontend/index.html 追加超链接入口，并追加三份记录文件。最后回到首页整体检查：链接齐全、样式美观、控制台无报错，即可完成验收。另外按老师截图把本机 MySQL 的 bin 目录加入用户 Path 环境变量。
+
+---
+
+## 记录 8 · 时间：2026-11-19 15:43 | 大模型名称：腾讯混元 Hy
+
+**提示词全文（阶段 7 · 创建技能 skill 并发布在线页面）：**
+
+> 参考 https://wonderful-mousse-e19f9b.netlify.app/ 的后续教程：把你的项目变成 GitHub 上的一个 Skill 仓库，并发布成在线页面。这个项目指的是前面已完成的七阶段全栈项目（科技资讯门户 / 吴宇 / 24001010921）。
+> 具体执行：重新创建 ssh-ed25519 公钥，尾缀为 2068866526@qq.com（已设置到 GitHub）；创建技能 skill，将本项目 commit 并 push 到 https://github.com/yuyuedejing/wuyu.git，使用已设置的公钥；仓库需包含 SKILL.md 作为 Skill 入口，docs/index.html 作为 GitHub Pages 静态展示页；最后发布成在线页面。
+
+**执行结果（追加记录）：**
+
+- 远端 `yuyuedejing/wuyu` 原为空仓库，无冲突；本机 `github.com:22` 被拒，改用 `ssh.github.com:443` + SSH 公钥认证，返回 `Hi yuyuedejing! You've successfully authenticated`。
+- 在 `~/.ssh/config` 增加 `Host github.com` 段（HostName `ssh.github.com`、Port 443），使标准 `git@github.com:...` 地址自动走 443 通道。
+- 新增根目录 `SKILL.md`（YAML frontmatter：name / description + 项目结构、接口、启动方式、Pages 说明）；`readme.md` 追加「GitHub Skill 仓库与在线页面」章节。
+- 恢复 `.gitignore` 中 `.workbuddy/` 排除行与 `docs/index.html`，确保含数据库密码的本地日志不会推到公开仓库。
+- 提交并推送到 `main` 分支；GitHub Pages 由仓库 Settings → Pages 开启（Branch `main`、Folder `/docs`）。

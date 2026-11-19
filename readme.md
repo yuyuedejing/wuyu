@@ -53,3 +53,16 @@
 ## 数据库重建
 
 按顺序执行 `backend/Cheney_database.md` 中的 SQL 即可在新机器完整重建数据库与测试数据。
+
+## GitHub Skill 仓库与在线页面
+
+| 项 | 内容 |
+| --- | --- |
+| **Skill 入口** | 根目录 `SKILL.md`（YAML frontmatter + 项目结构、接口、启动与约定） |
+| **GitHub 仓库** | https://github.com/yuyuedejing/wuyu （Public，SSH 公钥推送，走 `ssh.github.com:443`） |
+| **在线展示页** | https://yuyuedejing.github.io/wuyu/ |
+| **Pages 设置** | Settings → Pages → Deploy from a branch → Branch `main`、Folder `/docs` |
+
+`docs/index.html` 是**零外部依赖**的纯静态展示页（无外链、无脚本、无 fetch），打开即完整展示项目与验收结果。注意：**GitHub Pages 只托管静态文件**，在线页里的 `/api/` 接口不可用；完整功能请双击 `启动项目.bat` 在本地 `http://localhost:8325` 运行。
+
+`.env`、`node_modules/`、`.workbuddy/`（含本地工作日志与数据库密码）均已被 `.gitignore` 排除，不会推到公开仓库。
