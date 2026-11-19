@@ -1,0 +1,16 @@
+<!-- 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+<defs>
+<linearGradient id="WuYu_bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#14b8a6"/></linearGradient>
+<pattern id="WuYu_grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/></pattern>
+</defs>
+<rect width="600" height="340" fill="url(#WuYu_bg)"/>
+<rect width="600" height="340" fill="url(#WuYu_grid)"/>
+<circle cx="450" cy="165" r="118" fill="rgba(255,255,255,.10)"/>
+<circle cx="450" cy="165" r="88" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-dasharray="10 8"/>
+<g fill="rgba(255,255,255,.16)"><rect x="410" y="125" width="80" height="80" rx="8"/><rect x="428" y="143" width="44" height="44" rx="4"/></g>
+<g stroke="rgba(255,255,255,.45)" stroke-width="2"><path d="M450 47V95M450 235V283M332 165H380M520 165H568"/></g>
+<rect x="48" y="60" width="56" height="6" rx="3" fill="#fde68a"/>
+<text x="48" y="262" font-family="Consolas,monospace" font-size="54" font-weight="bold" fill="rgba(255,255,255,.45)">02</text>
+<text x="48" y="302" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#ffffff">CHIP WAFER</text>
+</svg>

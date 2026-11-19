@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图文列表 · 科技资讯门户</title>
+<link rel="stylesheet" href="css/WuYu_style.css">
+</head>
+<body>
+<div class="WuYu_wrap">
+  <header class="WuYu_header">
+    <div>
+      <h1 class="WuYu_headerTitle">图文列表</h1>
+      <p class="WuYu_headerSub">数据来自 MySQL 表 WuYu_gallery，图片为本地自建 SVG</p>
+    </div>
+    <a class="WuYu_backLink" href="index.html">← 返回首页</a>
+  </header>
+
+  <section class="WuYu_card">
+    <h2 class="WuYu_cardTitle">后端接口</h2>
+    <div class="WuYu_apiBox">
+      <span class="WuYu_apiLabel">GET 接口地址</span>
+      <a class="WuYu_apiUrl" id="WuYu_apiUrl" href="#" target="_blank">http://localhost:8325/api/gallery</a>
+    </div>
+    <p class="WuYu_loading" id="WuYu_status">正在从后端接口加载数据...</p>
+    <h2 class="WuYu_cardTitle" style="margin-top:18px">接口返回数据（原始 JSON）</h2>
+    <pre class="WuYu_jsonBox" id="WuYu_jsonBox">加载中...</pre>
+  </section>
+
+  <div class="WuYu_grid" id="WuYu_galleryGrid"></div>
+
+  <footer class="WuYu_footer">吴宇 · 24001010921 · 大模型：腾讯混元 Hy · 数据与错误同时输出到浏览器控制台</footer>
+</div>
+<script src="js/WuYu_gallery.js"></script>
+</body>
+</html>

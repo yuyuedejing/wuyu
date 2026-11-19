@@ -1,0 +1,16 @@
+<!-- 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+<defs>
+<linearGradient id="WuYu_bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c4a6e"/><stop offset="1" stop-color="#0284c7"/></linearGradient>
+<pattern id="WuYu_grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/></pattern>
+</defs>
+<rect width="600" height="340" fill="url(#WuYu_bg)"/>
+<rect width="600" height="340" fill="url(#WuYu_grid)"/>
+<path d="M340 220 Q420 90 480 180 T580 130" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="6" stroke-linecap="round"/>
+<g fill="#ffffff" opacity=".75"><circle cx="360" cy="195" r="9"/><circle cx="440" cy="140" r="9"/><circle cx="520" cy="165" r="9"/></g>
+<circle cx="450" cy="170" r="96" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+<circle cx="450" cy="170" r="60" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="2"/>
+<rect x="48" y="60" width="56" height="6" rx="3" fill="#7dd3fc"/>
+<text x="48" y="262" font-family="Consolas,monospace" font-size="54" font-weight="bold" fill="rgba(255,255,255,.45)">06</text>
+<text x="48" y="302" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#ffffff">SUBSEA CABLE</text>
+</svg>

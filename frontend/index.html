@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技资讯门户 · 首页</title>
+<link rel="stylesheet" href="css/WuYu_index.css">
+</head>
+<body>
+<canvas id="WuYu_bgCanvas" class="WuYu_canvas"></canvas>
+
+<div class="WuYu_page">
+  <header class="WuYu_hero">
+    <span class="WuYu_tag">VIBE CODING · 全栈项目实战</span>
+    <h1 class="WuYu_title">科技资讯<span class="WuYu_titleAccent">门户</span></h1>
+    <p class="WuYu_subtitle">基于原生前端 + Node.js / Express + MySQL 的全栈练习项目</p>
+  </header>
+
+  <section class="WuYu_metaGrid">
+    <div class="WuYu_metaCard"><span class="WuYu_metaLabel">姓名</span><span class="WuYu_metaValue">吴宇</span></div>
+    <div class="WuYu_metaCard"><span class="WuYu_metaLabel">学号</span><span class="WuYu_metaValue">24001010921</span></div>
+    <div class="WuYu_metaCard"><span class="WuYu_metaLabel">项目名称</span><span class="WuYu_metaValue">科技资讯门户</span></div>
+    <div class="WuYu_metaCard"><span class="WuYu_metaLabel">项目类别</span><span class="WuYu_metaValue">自选</span></div>
+  </section>
+
+  <nav class="WuYu_navGrid">
+    <a class="WuYu_navCard" href="database.html">
+      <span class="WuYu_navIcon">01</span>
+      <span class="WuYu_navTitle">数据库连接测试</span>
+      <span class="WuYu_navDesc">输入用户名与密码，调用 /api/db/test 验证 MySQL 连通性</span>
+    </a>
+    <a class="WuYu_navCard" href="news.html">
+      <span class="WuYu_navIcon">02</span>
+      <span class="WuYu_navTitle">科技新闻列表</span>
+      <span class="WuYu_navDesc">从 WuYu_news 表读取数据，展示接口链接与返回内容</span>
+    </a>
+    <a class="WuYu_navCard" href="gallery.html">
+      <span class="WuYu_navIcon">03</span>
+      <span class="WuYu_navTitle">图文列表</span>
+      <span class="WuYu_navDesc">从 WuYu_gallery 表读取图文数据，本地图片渲染</span>
+    </a>
+  </nav>
+
+  <footer class="WuYu_footer">吴宇 · 24001010921 · 大模型：腾讯混元 Hy · 后端端口 8325</footer>
+</div>
+
+<script src="js/WuYu_animation.js"></script>
+</body>
+</html>

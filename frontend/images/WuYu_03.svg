@@ -1,0 +1,17 @@
+<!-- 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+<defs>
+<linearGradient id="WuYu_bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+<pattern id="WuYu_grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"/></pattern>
+</defs>
+<rect width="600" height="340" fill="url(#WuYu_bg)"/>
+<rect width="600" height="340" fill="url(#WuYu_grid)"/>
+<path d="M470 40 L510 130 L490 250 L450 250 L430 130 Z" fill="rgba(255,255,255,.18)"/>
+<path d="M470 40 L510 130 H430 Z" fill="rgba(255,255,255,.30)"/>
+<path d="M430 210 L390 270 L430 250 ZM510 210 L550 270 L510 250 Z" fill="rgba(255,255,255,.16)"/>
+<path d="M455 250 L470 310 L485 250 Z" fill="#fef3c7" opacity=".85"/>
+<circle cx="470" cy="145" r="16" fill="rgba(255,255,255,.55)"/>
+<rect x="48" y="60" width="56" height="6" rx="3" fill="#ffffff"/>
+<text x="48" y="262" font-family="Consolas,monospace" font-size="54" font-weight="bold" fill="rgba(255,255,255,.45)">03</text>
+<text x="48" y="302" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#ffffff">ROCKET LAUNCH</text>
+</svg>

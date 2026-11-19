@@ -1,0 +1,147 @@
+/* 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  color: #1e293b;
+  background: #f1f5fb;
+  line-height: 1.7;
+}
+
+.WuYu_wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 60px; }
+
+.WuYu_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.WuYu_headerTitle { font-size: 28px; font-weight: 800; color: #16245c; }
+.WuYu_headerSub { font-size: 14px; color: #64748b; }
+
+.WuYu_backLink {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.WuYu_backLink:hover { background: #1b2f6b; }
+
+.WuYu_card {
+  padding: 26px 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+  margin-bottom: 22px;
+}
+
+.WuYu_cardTitle { font-size: 19px; font-weight: 700; color: #1b2f6b; margin-bottom: 16px; }
+
+.WuYu_apiBox {
+  padding: 14px 18px;
+  border-left: 4px solid #22c55e;
+  border-radius: 0 10px 10px 0;
+  background: #f0fdf4;
+  margin-bottom: 20px;
+}
+
+.WuYu_apiLabel { font-size: 13px; color: #15803d; letter-spacing: 1px; display: block; margin-bottom: 4px; }
+
+.WuYu_apiUrl {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 15px;
+  color: #166534;
+  word-break: break-all;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.WuYu_apiUrl:hover { text-decoration: underline; }
+
+.WuYu_formRow { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; }
+
+.WuYu_field { display: flex; flex-direction: column; gap: 6px; flex: 1 1 220px; }
+.WuYu_label { font-size: 14px; color: #475569; font-weight: 600; }
+
+.WuYu_input {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+}
+
+.WuYu_input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px #dbeafe; }
+
+.WuYu_btn {
+  padding: 11px 26px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+
+.WuYu_btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(37, 99, 235, .3); }
+.WuYu_btn:active { transform: translateY(0); }
+
+.WuYu_msg { margin-top: 16px; padding: 12px 16px; border-radius: 10px; font-size: 15px; display: none; }
+.WuYu_msgOk { display: block; background: #dcfce7; color: #15803d; border-left: 4px solid #22c55e; }
+.WuYu_msgErr { display: block; background: #fee2e2; color: #b91c1c; border-left: 4px solid #ef4444; }
+
+.WuYu_jsonBox {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #a5f3fc;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.WuYu_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.WuYu_item {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.WuYu_item:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(15, 23, 42, .12); }
+
+.WuYu_itemImg { width: 100%; height: 170px; object-fit: cover; display: block; background: #e2e8f0; }
+.WuYu_itemBody { padding: 16px 18px 20px; }
+.WuYu_itemTitle { font-size: 17px; font-weight: 700; color: #16245c; margin-bottom: 8px; }
+.WuYu_itemDesc { font-size: 14px; color: #475569; margin-bottom: 12px; }
+.WuYu_itemMeta { font-size: 12.5px; color: #64748b; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+
+.WuYu_loading { color: #64748b; font-size: 15px; padding: 20px 0; }
+.WuYu_empty { color: #b91c1c; font-size: 15px; padding: 20px 0; }
+
+.WuYu_footer { margin-top: 30px; text-align: center; font-size: 13px; color: #94a3b8; }

@@ -1,0 +1,142 @@
+/* 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  color: #eaf1ff;
+  background: linear-gradient(135deg, #0b1230 0%, #14245c 55%, #1d4ed8 100%);
+  overflow-x: hidden;
+}
+
+.WuYu_canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.WuYu_page {
+  position: relative;
+  z-index: 1;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+}
+
+.WuYu_hero { text-align: center; margin-bottom: 38px; }
+
+.WuYu_tag {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid rgba(147, 197, 253, .45);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .08);
+  color: #bfdbfe;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.WuYu_title {
+  margin: 20px 0 12px;
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, .35);
+}
+
+.WuYu_titleAccent { color: #4ade80; }
+
+.WuYu_subtitle { font-size: 16px; color: #b9cdf5; letter-spacing: 1px; }
+
+.WuYu_metaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-bottom: 34px;
+}
+
+.WuYu_metaCard {
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .09);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.WuYu_metaLabel { font-size: 13px; color: #a9c6ff; letter-spacing: 2px; }
+.WuYu_metaValue { font-size: 20px; font-weight: 700; color: #ffffff; }
+
+.WuYu_navGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.WuYu_navCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px 26px 30px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .10);
+  backdrop-filter: blur(12px);
+  text-decoration: none;
+  color: #eaf1ff;
+  transition: transform .25s, background .25s, box-shadow .25s;
+  overflow: hidden;
+}
+
+.WuYu_navCard::after {
+  content: "→";
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  font-size: 26px;
+  color: #4ade80;
+  opacity: .7;
+  transition: transform .25s;
+}
+
+.WuYu_navCard:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, .18);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .28);
+}
+
+.WuYu_navCard:hover::after { transform: translateX(6px); }
+
+.WuYu_navIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #4ade80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.WuYu_navTitle { font-size: 21px; font-weight: 700; }
+.WuYu_navDesc { font-size: 14px; line-height: 1.7; color: #c7d7ff; }
+
+.WuYu_footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #9db4e8;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 720px) {
+  .WuYu_page { padding: 36px 16px 30px; }
+  .WuYu_title { font-size: 38px; letter-spacing: 3px; }
+}

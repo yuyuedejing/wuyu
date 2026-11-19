@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 姓名：吴宇 | 学号：24001010921 | 时间：2026-11-19 | 大模型：腾讯混元 Hy -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据库连接测试 · 科技资讯门户</title>
+<link rel="stylesheet" href="css/WuYu_style.css">
+</head>
+<body>
+<div class="WuYu_wrap">
+  <header class="WuYu_header">
+    <div>
+      <h1 class="WuYu_headerTitle">数据库连接测试</h1>
+      <p class="WuYu_headerSub">输入用户名与密码，调用后端接口实测 MySQL 连通性</p>
+    </div>
+    <a class="WuYu_backLink" href="index.html">← 返回首页</a>
+  </header>
+
+  <section class="WuYu_card">
+    <h2 class="WuYu_cardTitle">后端接口</h2>
+    <div class="WuYu_apiBox">
+      <span class="WuYu_apiLabel">POST 接口地址</span>
+      <a class="WuYu_apiUrl" id="WuYu_apiUrl" href="#" target="_blank">http://localhost:8325/api/db/test</a>
+    </div>
+
+    <form id="WuYu_form" class="WuYu_formRow">
+      <div class="WuYu_field">
+        <label class="WuYu_label" for="WuYu_username">用户名</label>
+        <input class="WuYu_input" id="WuYu_username" type="text" value="root" autocomplete="off">
+      </div>
+      <div class="WuYu_field">
+        <label class="WuYu_label" for="WuYu_password">密码</label>
+        <input class="WuYu_input" id="WuYu_password" type="text" value="123456" autocomplete="off">
+      </div>
+      <button class="WuYu_btn" type="submit">连接数据库</button>
+    </form>
+
+    <p class="WuYu_headerSub" style="margin-top:12px">默认值与 backend/.env 保持一致（root / 123456）；改成错误密码可查看失败提示。</p>
+
+    <div class="WuYu_msg" id="WuYu_msg"></div>
+    <h2 class="WuYu_cardTitle" style="margin-top:22px">接口返回数据（原始 JSON）</h2>
+    <pre class="WuYu_jsonBox" id="WuYu_jsonBox">点击"连接数据库"后，这里显示接口返回的完整数据。</pre>
+  </section>
+
+  <footer class="WuYu_footer">吴宇 · 24001010921 · 大模型：腾讯混元 Hy · 数据与错误同时输出到浏览器控制台</footer>
+</div>
+<script src="js/WuYu_database.js"></script>
+</body>
+</html>
